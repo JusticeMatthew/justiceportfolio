@@ -34,8 +34,12 @@ const ContactForm: FC = () => {
 
       await toast.promise(
         emailjs.send(
-          process.env.NEXT_PUBLIC_EMAILJS_SERVICE,
-          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE
+            ? process.env.NEXT_PUBLIC_EMAILJS_SERVICE
+            : '',
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE
+            ? process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE
+            : '',
           validatedForm,
           process.env.NEXT_PUBLIC_EMAILJS_USER,
         ),
