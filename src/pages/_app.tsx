@@ -13,8 +13,6 @@ export default function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Portfolio website for Matthew Justice"
         />
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content="Matthew Justice Portfolio" />
         <meta
           property="og:description"
@@ -22,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta property="og:image" content="/opengraphimg.png" />
       </Head>
+
       <Layout>
         <Component {...pageProps} />
       </Layout>

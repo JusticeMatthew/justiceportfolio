@@ -4,10 +4,6 @@ import { loadFull } from 'tsparticles';
 import { polygonPathName, loadPolygonPath } from 'tsparticles-path-polygon';
 import type { Engine } from 'tsparticles-engine';
 
-const Loading: FC = () => {
-  return <div>Loading...</div>;
-};
-
 const HexParticles: FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
@@ -15,7 +11,7 @@ const HexParticles: FC = () => {
   }, []);
 
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense fallback={<div>Loading...</div>}>
       <Particles
         init={particlesInit}
         className="absolute z-0 h-full w-full"
