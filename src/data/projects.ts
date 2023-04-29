@@ -26,7 +26,7 @@ const projects = [
     ],
   },
   {
-    img: '/bandc.png',
+    img: '/BandC.png',
     alt: 'b and c pest control logo',
     name: 'B & C Pest Control',
     description: `Designed and developed a professional website for a local pest control company using React and Tailwind CSS. Hosting and DNS services are provided by AWS for optimal performance and reliability. Since launch, the website has increased traffic by 200% according to Google Business Analytics.`,
