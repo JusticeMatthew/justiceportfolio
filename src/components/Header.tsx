@@ -1,11 +1,19 @@
-import type { FC } from 'react';
+import { useEffect, type FC } from 'react';
 import Image from 'next/image';
+import { Events } from 'react-scroll';
 import { ScrollLink } from '@/components';
 
 const Header: FC = () => {
+  useEffect(() => {
+    Events.scrollEvent.register('begin', () => null);
+    Events.scrollEvent.register('end', () => null);
+
+    return Events.scrollEvent.remove('begin'), Events.scrollEvent.remove('end');
+  }, []);
+
   return (
     <div className="fixed z-20 flex h-20 w-full items-center justify-center text-white backdrop-blur-md">
-      <div className="flex w-container items-center justify-between px-6">
+      <div className="section flex items-center justify-between">
         <ScrollLink
           to="home"
           active=""

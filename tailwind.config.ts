@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Poppins',
-        roboto: 'Roboto',
-        robotoCondensed: 'Roboto Condensed',
+        sans: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        robotoCondensed: ['Roboto Condensed', 'sans-serif'],
       },
       colors: {
         green: '#15db95',

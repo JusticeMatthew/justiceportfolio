@@ -3,3 +3,9 @@
 @tailwind utilities;
 @import-normalize;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Condensed&display=swap');
+
+@layer components {
+  .section {
+    @apply w-container px-6;
+  }
+}

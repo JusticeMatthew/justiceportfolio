@@ -16,7 +16,7 @@ const projects = [
     img: '/budbud.png',
     alt: 'budbud logo',
     name: 'BudBud',
-    description: `BudBud is a mobile app I designed and built that helps medical marijuana patients track information about their medicine. The app features a modern, functional interface that simplifies tracking medicine and leverages Firebase and Firestore for Authentication and Storage, allowing for easy analysis.`,
+    description: `A React Native app I designed and built that helps medical marijuana patients track information about their medicine. The app features a modern, functional interface that simplifies tracking medicine and leverages Firebase and Firestore for Authentication and Storage, allowing for easy analysis.`,
     github: 'https://github.com/JusticeMatthew/budbudv7',
     projectLink: 'https://photos.app.goo.gl/QWDbyTWY2CMdSSVA9',
     stack: [

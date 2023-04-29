@@ -11,20 +11,19 @@ const Landing: FC = () => {
   };
 
   return (
-    <section
+    <div
       id="home"
       className="flex h-screen w-full items-center justify-center bg-papyrus text-white"
     >
-      <div className="my-4 flex w-container flex-col items-center justify-center px-6">
+      <div className="section my-4 flex flex-col items-center justify-center">
         <h1 className="text-center font-roboto text-5xl font-bold leading-normal">
           <WavyText text="Transforming" />
           <motion.span animate={fadeIn.animate} transition={fadeIn.transition}>
-            {' '}
-            your online presence with <br />
+            &nbsp;your online presence with <br />
             <span className="border-b-4 border-green pb-1">
               stunning design
-            </span>{' '}
-            and seamless functionality
+            </span>
+            &nbsp;and seamless functionality
           </motion.span>
         </h1>
         <motion.p
@@ -54,7 +53,7 @@ const Landing: FC = () => {
           </ScrollLink>
         </motion.div>
       </div>
-      <div className="absolute mb-6 flex w-full justify-center self-end">
+      <div className="absolute bottom-4 flex w-full justify-center self-end">
         <ScrollLink to="projects" className="cursor-pointer rounded-full">
           <motion.div
             initial={{
@@ -86,7 +85,7 @@ const Landing: FC = () => {
           </motion.div>
         </ScrollLink>
       </div>
-    </section>
+    </div>
   );
 };
 
