@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['main.d2nl8zqqmqrci8.amplifyapp.com'],
+    domains: ['amplifyapp.com'],
   },
 };
 
