@@ -20,7 +20,7 @@ const Header: FC = () => {
           className="cursor-pointer rounded-md bg-zinc-900 px-2 py-[.3rem]"
         >
           <Image
-            src="/logoTest.png"
+            src="/images/logoTest.png"
             width={50}
             height={50}
             alt="logo"
